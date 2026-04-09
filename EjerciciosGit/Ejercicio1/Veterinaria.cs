@@ -30,7 +30,7 @@ public class Veterinaria
         bool especieEncontrada=false;
         for(int i=0; i<ListaMascotas.Count; i++)
         {
-            if (ListaMascotas[i].Especie == especie)
+            if (ListaMascotas[i].Especie.ToLower() == especie.ToLower())
             {
                 ListaMascotas[i].ObtenerInfo();
                 especieEncontrada=true;

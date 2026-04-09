@@ -2,10 +2,10 @@ namespace EjerciciosGit.Ejercicio1;
 
 public class Mascota
 {
-    public required string Nombre { get; set; }
-    public required string Especie { get; set; }
+    public string Nombre { get; set; }
+    public string Especie { get; set; }
     public int Edad { get; set; }
-    public required Dueño Dueño {get; set;}
+    public Dueño Dueño {get; set;}
 
     public Mascota(string nombre, string especie, int edad, Dueño dueño)
     {
