@@ -3,9 +3,9 @@ namespace EjerciciosGit.Ejercicio1;
 public class Veterinaria
 {
     private List<Mascota> ListaMascotas { get; set; }
-    public Veterinaria()
+    public Veterinaria(List<Mascota> mascotas)
     {
-        ListaMascotas = new List<Mascota>();
+        ListaMascotas = mascotas;
     }
     
     public void RegistrarMascota(Mascota mascota)=>ListaMascotas.Add(mascota);
